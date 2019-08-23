@@ -1,6 +1,14 @@
 const clearText = () => {
-  // document.getElementById('txt').value = '';
-  // document.getElementById('blend').value = '';
+  setTimeout(function(){
+    document.getElementById('txt').value = '';
+    document.getElementById('blend').value = '';
+  },0);
+  
+}
+
+const clearURL = () => {
+  window.history.replaceState(null, null, window.location.pathname);
+
 }
 
 const urlParams = () => {

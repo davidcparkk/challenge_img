@@ -20,7 +20,7 @@
       <div class="title">
         <h2>Create Flat Image</h2>
       </div>
-      <form class="main-form" action="index.html" method="GET" target="_new">
+      <form class="main-form" action="index.html" method="GET" >
         <div class="input-container">
           <div class="inputs">
             <label for="txt">
@@ -49,6 +49,13 @@
             type="submit"
             onclick="clearText()"
           />
+          <form
+            action="index.html"
+            method="POST"
+            onsubmit="clearURL()"
+          >
+            <input type="submit" value="View Original" class="button" id="view-og">
+          </form>
     </form>
     </div>
     <div id="image-container">
